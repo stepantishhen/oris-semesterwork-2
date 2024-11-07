@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  mysql-db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: simply_blog
+      MYSQL_USER: stepan
+      MYSQL_PASSWORD: 240935
+      MYSQL_ROOT_PASSWORD: 240935
+    ports:
+      - "3306:3306"
